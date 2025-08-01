@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import Footer from "@/components/ui/footer";
 import { Brain, ArrowLeft, Shield, FileText, Copyright, Scale, Search, User, Calendar, Building, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 
 const About = () => {
@@ -566,6 +567,9 @@ const About = () => {
           </Card>
         </div>
       </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

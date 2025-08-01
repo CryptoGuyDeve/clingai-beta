@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { ModeSelector } from "@/components/ui/mode-selector";
 import { ChatInterface } from "@/components/ui/chat-interface";
 import { SubscriptionCard } from "@/components/subscription-card";
+import Footer from "@/components/ui/footer";
 import { useAuth } from "@/hooks/useAuth";
 import { Brain, Code2, Zap, Crown, Menu, User, LogOut } from "lucide-react";
 import { toast } from "sonner";
@@ -38,9 +39,9 @@ const Index = () => {
           </div>
           
           <nav className="hidden md:flex items-center gap-6">
-            <Button variant="ghost">Features</Button>
-            <Button variant="ghost">Pricing</Button>
-            <Button variant="ghost">Docs</Button>
+            <Button variant="ghost" onClick={() => navigate("/features")}>Features</Button>
+            <Button variant="ghost" onClick={() => navigate("/pricing")}>Pricing</Button>
+            <Button variant="ghost" onClick={() => navigate("/docs")}>Docs</Button>
             <Button variant="ghost" onClick={() => navigate("/about")}>About Us</Button>
           </nav>
           
@@ -191,6 +192,9 @@ const Index = () => {
           </div>
         </main>
       )}
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
